@@ -8,6 +8,9 @@ Learn the very basics of Yandex MapKit in Android.
 * Gradle wrapper 5.2.1
 * AAPT 2
 
+## Notes
+* Yandex key is taken from ~/.gradle/gradle.properties file as described in https://medium.com/code-better/hiding-api-keys-from-your-android-repository-b23f5598b906
+
 ## References
 https://tech.yandex.ru/maps/mapkit/?from=mapsapi
 
