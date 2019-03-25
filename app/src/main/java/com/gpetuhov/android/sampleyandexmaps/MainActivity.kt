@@ -13,11 +13,8 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
-        // Yandex key is taken from ~/.gradle/gradle.properties file
-        // into BuildConfig inside the build.gradle script.
-        MapKitFactory.setApiKey(BuildConfig.YandexKey)
-
         // It is NOT recommended to call this in Application.onCreate()
+        // Notice that this is called BEFORE setContentView()
         MapKitFactory.initialize(this)
 
         setContentView(R.layout.activity_main)
